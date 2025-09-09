@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: failing-dummy-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: failing-container
+        image: registry.redhat.io/ubi8/ubi-minimal # Or another small, readily available image
+        command: ["/bin/sh", "-c"]
+        args:
+          - "echo 'This job is designed to fail...' && sleep 5 && exit 1"
+      restartPolicy: Never
