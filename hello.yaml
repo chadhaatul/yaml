@@ -8,6 +8,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: busybox
+        image: registry.redhat.io/ubi8/ubi-minimal
         command: ["/bin/sh","hostname -o"]
       restartPolicy: Never
+
