@@ -8,6 +8,7 @@ spec:
       containers:
       - name: hello
         image: busybox
-        command: ["hostname"]
+        command: ["hostnmea"]
       restartPolicy: Never
+
 
