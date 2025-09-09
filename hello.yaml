@@ -8,5 +8,6 @@ spec:
       containers:
       - name: hello
         image: busybox
-        command: ["echo", "Hello, World!"]
+        command: ["hostname"]
       restartPolicy: Never
+
