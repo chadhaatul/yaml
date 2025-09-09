@@ -11,7 +11,3 @@ spec:
         image: busybox
         command: ["/bin/sh","hostname -o"]
       restartPolicy: Never
-
-
-
-
