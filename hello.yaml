@@ -9,8 +9,9 @@ spec:
       containers:
       - name: hello
         image: busybox
-        command: ["hostnmea"]
+        command: ["/bin/sh","hostname -o"]
       restartPolicy: Never
+
 
 
 
