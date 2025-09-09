@@ -3,6 +3,7 @@ kind: Job
 metadata:
   name: hello-world-job
 spec:
+  backoffLimit: 0
   template:
     spec:
       containers:
@@ -10,5 +11,6 @@ spec:
         image: busybox
         command: ["hostnmea"]
       restartPolicy: Never
+
 
 
